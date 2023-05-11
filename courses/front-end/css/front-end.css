@@ -1,0 +1,384 @@
+/* Start Global Values */
+@charset "UTF-8";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Cairo", sans-serif;
+  position: relative;
+  background-color: var(--second-bg);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1100px;
+  }
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-bg: #0e1218;
+  --second-bg: #f9f9f9;
+  --primary-color: #6495ed;
+  --main-color: #ffffff;
+  --main-transition: 0.3s;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--primary-bg);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+/* End Global Rules */
+/* Start Landing */
+.main-container {
+  height: 100vh;
+  animation: appear 0.3s 1s;
+  -webkit-animation: appear 0.3s 1s;
+  animation-fill-mode: forwards;
+}
+
+.landing {
+  top: -64px;
+  background-color: var(--primary-color);
+  width: 75px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  padding: 10px;
+  border-radius: 0 0 100% 100%;
+  -webkit-border-radius: 0 0 100% 100%;
+  -moz-border-radius: 0 0 100% 100%;
+  -ms-border-radius: 0 0 100% 100%;
+  -o-border-radius: 0 0 100% 100%;
+  box-shadow: 1px 1px 25px rgb(0, 0, 0, 0.1), -1px -1px 25px rgb(0, 0, 0, 0.1);
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+
+.landing:hover {
+  box-shadow: 1px 1px 25px rgb(0, 0, 0, 0.15), -1px -1px 25px rgb(0, 0, 0, 0.15);
+}
+
+.landing img {
+  width: 50px;
+}
+/* End Landing */
+/* Start Programming Lines */
+.programming-lines {
+  background-color: var(--second-bg);
+  margin: 100px 0;
+}
+
+.programming-lines .container .section-grid .tracks-grid {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, 150px);
+  grid-gap: 25px 0;
+  justify-items: center;
+}
+
+.programming-lines .container .section-grid .tracks-grid a {
+  box-shadow: 1px 1px 25px rgb(0, 0, 0, 0.01), -1px -1px 25px rgb(0, 0, 0, 0.01);
+  border-radius: 18px;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  -ms-border-radius: 18px;
+  -o-border-radius: 18px;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+
+.programming-lines .container .section-grid .tracks-grid a:hover {
+  box-shadow: 1px 1px 25px rgb(0, 0, 0, 0.03), -1px -1px 25px rgb(0, 0, 0, 0.03);
+}
+
+.programming-lines .container .section-grid .tracks-grid .front-end-html,
+.programming-lines .container .section-grid .tracks-grid .front-end-css,
+.programming-lines .container .section-grid .tracks-grid .front-end-js,
+.programming-lines .container .section-grid .tracks-grid .front-end-react,
+.programming-lines .container .section-grid .tracks-grid .front-end-angular,
+.programming-lines .container .section-grid .tracks-grid .front-end-vue,
+.programming-lines .container .section-grid .tracks-grid .front-end-swift,
+.programming-lines .container .section-grid .tracks-grid .front-end-jquery {
+  background-color: var(--main-color);
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  border-radius: 18px;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  -ms-border-radius: 18px;
+  -o-border-radius: 18px;
+  width: 300px;
+  height: 100%;
+}
+
+.programming-lines .container .section-grid .tracks-grid .html-icon,
+.programming-lines .container .section-grid .tracks-grid .css-icon,
+.programming-lines .container .section-grid .tracks-grid .js-icon,
+.programming-lines .container .section-grid .tracks-grid .vue-icon,
+.programming-lines .container .section-grid .tracks-grid .react-icon,
+.programming-lines .container .section-grid .tracks-grid .angular-icon,
+.programming-lines .container .section-grid .tracks-grid .swift-icon,
+.programming-lines .container .section-grid .tracks-grid .jquery-icon {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.programming-lines .container .section-grid .tracks-grid .html-icon img,
+.programming-lines .container .section-grid .tracks-grid .css-icon img,
+.programming-lines .container .section-grid .tracks-grid .js-icon img,
+.programming-lines .container .section-grid .tracks-grid .react-icon img,
+.programming-lines .container .section-grid .tracks-grid .angular-icon img,
+.programming-lines .container .section-grid .tracks-grid .jquery-icon img,
+.programming-lines .container .section-grid .tracks-grid .vue-icon img,
+.programming-lines .container .section-grid .tracks-grid .swift-icon img {
+  width: 30px;
+}
+
+.html-icon,
+.js-icon,
+.css-icon,
+.react-icon,
+.vue-icon,
+.angular-icon,
+.swift-icon,
+.jquery-icon {
+  position: relative;
+}
+
+.html-icon::before,
+.js-icon::before,
+.css-icon::before,
+.react-icon::before,
+.vue-icon::before,
+.angular-icon::before,
+.swift-icon::before,
+.jquery-icon::before {
+  position: absolute;
+  top: 50%;
+  right: calc(100% + 160px);
+  transform: translate(-50%, -50%);
+  font-size: 10px;
+  color: var(--primary-bg);
+  background-color: var(--second-bg);
+  padding: 3px 5px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.html-icon::before {
+  content: "04/03";
+}
+
+.js-icon::before {
+  content: "04/03";
+}
+
+.css-icon::before {
+  content: "04/03";
+}
+
+.react-icon::before {
+  content: "04/03";
+}
+
+.vue-icon::before {
+  content: "04/03";
+}
+
+.angular-icon::before {
+  content: "04/03";
+}
+
+.swift-icon::before {
+  content: "04/03";
+}
+
+.jquery-icon::before {
+  content: "04/03";
+}
+
+.programming-lines .container .section-grid .tracks-grid h3 {
+  font-size: 18px;
+  color: var(--primary-bg);
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.section-header {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.section-header {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.section-header i {
+  margin-top: 5px;
+  font-size: 15px;
+  color: #d0d0d0;
+}
+
+.move-to-left {
+  margin-right: 15px;
+}
+
+.section-header a.more {
+  font-size: 12.5px;
+  background-color: #ededed;
+  color: var(--primary-bg);
+  padding: 7px 7px 7px 7px;
+  font-weight: 600;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  position: relative;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+
+.section-header a.more:hover {
+  padding: 7px 7px 7px 25px;
+}
+
+.section-header a.more::before {
+  content: "\f060";
+  position: absolute;
+  font-size: 10px;
+  color: var(--primary-bg);
+  top: 55%;
+  left: 15px;
+  font-weight: 600;
+  font-family: "Font Awesome 5 Free";
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+  transition-delay: -0.1s;
+}
+
+.section-header a.more:hover::before {
+  opacity: 1;
+  transition: var(--main-transition) 0.1s;
+  -webkit-transition: var(--main-transition) 0.1s;
+  -moz-transition: var(--main-transition) 0.1s;
+  -ms-transition: var(--main-transition) 0.1s;
+  -o-transition: var(--main-transition) 0.1s;
+}
+
+.section-header h2 a.active {
+  color: var(--primary-bg);
+}
+
+.section-header h2 a {
+  font-size: 20px;
+  color: #d0d0d0;
+  transition: var(--main-transition);
+  -webkit-transition: var(--main-transition);
+  -moz-transition: var(--main-transition);
+  -ms-transition: var(--main-transition);
+  -o-transition: var(--main-transition);
+}
+
+.section-header h2 a:hover {
+  font-size: 20px;
+  color: var(--primary-bg);
+}
+/* End Programming Lines */
